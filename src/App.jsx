@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Routes>
       <Route path={AppRoutes.home} element={<Layout />}>
-        <Route exact element={<Home />} />
+        <Route path={AppRoutes.home} element={<Home />} />
         <Route path={AppRoutes.analytics} element={<Analytics />} />
         <Route path={AppRoutes.revenue} element={<Revenue />} />
         <Route path={AppRoutes.crm} element={<CRMPage />} />

@@ -7,6 +7,13 @@
 
 @font-face {
   font-family: Degular;
+  src: url(./assets/fonts/DegularDemo-Semibold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Degular;
   src: url(./assets/fonts/DegularDemo-Bold.otf) format('opentype');
   font-weight: 700;
   font-style: normal;
