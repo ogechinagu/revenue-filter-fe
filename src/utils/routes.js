@@ -4,4 +4,9 @@ export const AppRoutes = {
   revenue: '/revenue',
   crm: '/crm',
   apps: '/apps',
+  bio: '/apps/bio',
+  store: '/apps/store',
+  media: '/apps/media-kit',
+  invoicing: '/apps/invoicing',
+  notfound: '*',
 };
