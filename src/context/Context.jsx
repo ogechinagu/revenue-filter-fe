@@ -34,7 +34,7 @@ export const Provider = ({ children }) => {
 
   return (
     <Context.Provider
-      value={{ userData, walletData, transactionsData, loading }}
+      value={{ userData, walletData, transactionsData, setTransactionsData, loading }}
     >
       {children}
     </Context.Provider>

@@ -159,11 +159,11 @@ const Navbar = ({ position }) => {
               key={item.name}
               px={4}
               py={2}
-              my={[1,2]}
+              my={[1, 2]}
               spacing={4}
               cursor='pointer'
             >
-              <Icon as={item.icon} boxSize={6} my={[0,2]} />
+              <Icon as={item.icon} boxSize={6} my={[0, 2]} />
               <Box width='200px'>
                 <Text fontWeight={700}>{item.name}</Text>
               </Box>
@@ -197,7 +197,11 @@ const Navbar = ({ position }) => {
                 bg={location.pathname === item.route ? '#000' : undefined}
                 color={location.pathname === item.route ? '#FFF' : '#1A202C'}
                 borderRadius='50px'
-                _hover={{ bg: '#EFF1F6', borderRadius: '50px' }}
+                _hover={{
+                  bg: '#EFF1F6',
+                  color: '#1A202C !important',
+                  borderRadius: '50px',
+                }}
                 onClick={() => handleClick(item.route)}
               >
                 <Icon as={item.icon} boxSize='20px' mr={2} />
