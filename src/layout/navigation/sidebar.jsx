@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import {
   Box,
   Icon,
+  Tooltip,
   VStack,
   useBreakpointValue,
 } from '@chakra-ui/react';
@@ -22,11 +23,20 @@ const Sidebar = ({ position }) => {
       zIndex={999}
     >
       {sideNavItems?.map((item) => (
-        <Box key={item.name}>
-          {/* <Tooltip hasArrow label={item.name} fontSize='md' placement='right'> */}
-          <Icon as={item.icon} boxSize={6} my={2} />
-          {/* </Tooltip> */}
-        </Box>
+        <Tooltip hasArrow key={item.name} label={item.name} placement='right'>
+          <Box>
+            <Icon
+              as={item.icon}
+              boxSize={6}
+              my={2}
+              filter=' grayscale(100%)'
+              _hover={{
+                filter: 'grayscale(0%)',
+              }}
+              cursor='pointer'
+            />
+          </Box>
+        </Tooltip>
       ))}
     </VStack>
   );

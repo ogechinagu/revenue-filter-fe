@@ -64,13 +64,8 @@ const Transactions = () => {
         </Box>
       </Flex>
       <Box w='100%' my={6} borderBottom='1px solid #EFF1F6'></Box>
-      {transactionsData?.map((item) => (
-        <Flex
-          key={item?.payment_reference}
-          my={6}
-          justify='space-between'
-          align='center'
-        >
+      {transactionsData?.map((item, index) => (
+        <Flex key={index} my={6} justify='space-between' align='center'>
           <HStack>
             <Flex
               w='48px'
